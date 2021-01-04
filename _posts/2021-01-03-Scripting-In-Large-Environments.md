@@ -3,7 +3,7 @@ layout: post
 title: Scripting In Large Environments
 ---
 When I first started working in Azure running scripts was easy. I could easily do:
-'''powershell
+```powershell
 $subscriptions = Get-AZSubscription
 foreach($subscription in $subscriptions)
 {
@@ -11,8 +11,8 @@ foreach($subscription in $subscriptions)
     ### Do Stuff
 
 }
-'''
-But as I've gotten the opportunity to work with larger organizations these types of scripts become less efficient. With some clients having hundreds of subscriptions, this method can take a very long time when its not needed.
+```
+As I've gotten the opportunity to work with larger organizations these types of scripts become less efficient. With some clients having hundreds of subscriptions, this method can take a very long time when its not needed.
 
 In comes Azure Resource Graph.
 
@@ -44,7 +44,7 @@ Resources
 | join kind = inner (ResourceContainers | where type=='microsoft.resources/subscriptions' | project SubscriptionName=name, subscriptionId) on subscriptionId
 | project resourceGroup, name, SubscriptionName
 ```
-[Further Reading](https://docs.microsoft.com/en-us/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join)
+[Further Reading on join](https://docs.microsoft.com/en-us/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join)
 
 
 To run these you can either search for ***Azure Resource Explorer***, using Cloud Shell, or installing the Az.ResourceGraph and using the Search-AzGraph cmdlet.
