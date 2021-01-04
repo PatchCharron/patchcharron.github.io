@@ -6,10 +6,10 @@
 name: Patch Charron
 
 # Short bio or description (displayed in the header)
-description: Azure
+description: Thoughts from someone using Azure, PowerShell, dotnet Core, and other tech things.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+avatar: https://raw.githubusercontent.com/patchcharron/patchcharron.github.io/master/images/me.jpg
 
 #
 # Flags below are optional
@@ -21,9 +21,9 @@ footer-links:
   email:
   facebook:
   flickr:
-  github: barryclark/jekyll-now
+  github: patchcharron
   instagram:
-  linkedin:
+  linkedin: patchcharron
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter: patchcharron
@@ -41,7 +41,7 @@ google_analytics:
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url:
+url:patchcharron.com
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
