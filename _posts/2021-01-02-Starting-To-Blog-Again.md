@@ -1,6 +1,6 @@
 ---
 title: Starting to blog again
-type: post
+layout: post
 ---
 I have started to write posts each January as a new years resolution type thing, but never get past the first week. This year I am going to commit to at least January.
 
